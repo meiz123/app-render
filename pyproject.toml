@@ -1,0 +1,19 @@
+[project]
+name = "frame-lab"
+version = "0.2.0"
+description = "Local Android rendering diagnostics over ADB"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+frame-lab = "framelab.app:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["framelab*"]
+
+[tool.setuptools.package-data]
+framelab = ["static/*", "static/js/*", "static/styles/*", "assets/*"]

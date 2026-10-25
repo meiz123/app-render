@@ -1,0 +1,17 @@
+__pycache__/
+*.egg-info/
+reports/
+.venv/
+.venv-build/
+build/
+dist/
+release/
+vendor/
+.runtime-test/
+*.spec
+!packaging/*.spec
+.DS_Store
+.env
+.env.*
+/*.png
+/docs/frame-count-audit.json
